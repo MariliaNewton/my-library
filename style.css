@@ -145,7 +145,6 @@ body {
 .author,
 .pages {
   width: 90%;
-  /* background-color: #544343; */
   margin-top: 0;
   color: var(--citron);
   font-weight: 300;
