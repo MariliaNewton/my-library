@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Modak&family=Roboto+Mono:ital,wght@0,281;1,281&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300..700&family=VT323&family=Varela+Round&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+        <div class="library-title">
+            <h1>My Library</h1>
+        </div>
+      <div class="addbook-container">
+        <div>
+        <form class="addbook-form" action="get">
+        <div>
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" required/>
+        </div>
+        <div>
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" required/>
+        </div>
+        <div>
+          <label for="pages">Pages</label>
+          <input type="number" name="pages" id="pages" required/>
+        </div>
+        <div>
+          <label for="read">Read?</label>
+          <input type="checkbox" name="read" id="read" >
+        </div>
+    </div>
+        <div class="btn-addbook-container">
+            <button class="btn-addbook">Add Book</button>
+        </div>
+      </div>
+      <div class="bookcards-container">
+      </div>
+    </div>
+  </body>
+</html>

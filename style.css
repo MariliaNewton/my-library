@@ -1,0 +1,152 @@
+:root {
+  /* --caput: #56282d; */
+  --caput: #4b2c2f;
+  --liver: #544343;
+  --ebony: #626d58;
+  --aspargus: #5d7555;
+  --citron: #bdc667;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  background-color: var(--liver);
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 3rem;
+  justify-content: center;
+  width: 90%;
+}
+
+.library-title h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 5rem;
+  color: var(--citron);
+  margin-bottom: 0;
+}
+
+.addbook-container {
+  padding: 1rem;
+  border-radius: 0.2rem;
+  background-color: var(--caput);
+  color: var(--citron);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.addbook-form {
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+#pages {
+  max-width: 4rem;
+}
+
+.btn-addbook-container {
+  padding: 1rem;
+}
+
+.btn-addbook {
+  cursor: pointer;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: var(--citron);
+  background-color: var(--liver);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: 0.2rem solid var(--citron);
+  transition: 0.3s;
+}
+
+.btn-addbook:hover {
+  background-color: var(--ebony);
+}
+
+.bookcards-container {
+  padding: 1rem;
+  border-radius: 0.2rem;
+  background-color: var(--caput);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.book-card {
+  border: 2px solid var(--citron);
+  height: 18rem;
+  position: relative;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.delete-book {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: var(--citron);
+  background-color: var(--liver);
+  border-radius: 0.1rem;
+  border: 0.1rem solid var(--citron);
+  transition: 0.3s;
+}
+
+.delete-book:hover {
+  background-color: var(--ebony);
+}
+
+.btn-book {
+  width: 8rem;
+  height: 2rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: calc(50% - 4rem);
+  cursor: pointer;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: var(--citron);
+  background-color: var(--liver);
+  border-radius: 0.1rem;
+  border: 0.1rem solid var(--citron);
+  transition: background-color 0.3s;
+}
+
+.btn-book:hover {
+  background-color: var(--caput);
+}
+
+.btn-read {
+  background-color: var(--aspargus);
+}
+
+.btn-unread {
+  background-color: var(--liver);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.title,
+.author,
+.pages {
+  width: 90%;
+  /* background-color: #544343; */
+  margin-top: 0;
+  color: var(--citron);
+  font-weight: 300;
+}
