@@ -22,9 +22,25 @@ function addBookToLibrary(book) {
   myLibrary.push(book);
 }
 
+title.addEventListener("input", () => {
+  if (title.validity.tooShort)
+    title.setCustomValidity("The title is too short!");
+  else title.setCustomValidity("");
+});
+
+pages.addEventListener("input", () => {
+  if (pages.validity.valid) pages.setCustomValidity("");
+  else
+    pages.setCustomValidity(
+      "You can't have read a book with no page count o.O"
+    );
+});
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  if (title.value === "" || author.value === "" || pages.value === "") return;
+  // if (title.value === "" || author.value === "" || pages.value === "") return;
+
+  console.log("ndn", pages.validity);
 
   const curBook = new Book(
     title.value,
