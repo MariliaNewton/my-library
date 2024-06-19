@@ -38,9 +38,6 @@ pages.addEventListener("input", () => {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  // if (title.value === "" || author.value === "" || pages.value === "") return;
-
-  console.log("ndn", pages.validity);
 
   const curBook = new Book(
     title.value,
@@ -79,7 +76,6 @@ cardsContainer.addEventListener("click", function (e) {
       btn.classList.toggle("hidden");
     });
 
-    // Not necessary by now - used to toggle read/unread from array
     myLibrary[myLibrary.indexOf(curBook)].read =
       !myLibrary[myLibrary.indexOf(curBook)].read;
   }
